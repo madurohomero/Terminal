@@ -529,11 +529,10 @@ namespace Importar
         {
             try
             {
-                sc501ger.GetTermConectados(1, ref lista_terminais); //Obtem a lista de terminais conectados
-                idTerminalSelecionado = lista_terminais.TabSock[lista_terminais_conectados.SelectedIndex];  //Obter ID do terminal selecionado
-
                 if (validarConectadoSelecionado())
                 {
+                    sc501ger.GetTermConectados(1, ref lista_terminais); //Obtem a lista de terminais conectados
+                    idTerminalSelecionado = lista_terminais.TabSock[lista_terminais_conectados.SelectedIndex];  //Obter ID do terminal selecionado
                     sc501ger.bSendRestartSoft(idTerminalSelecionado);
                 }
             }
