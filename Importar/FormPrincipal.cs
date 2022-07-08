@@ -172,15 +172,11 @@ namespace Importar
 
                 //-- Validações de Terminal conectado e/ou selecionado --//
                 if (lista_terminais.NumSockConec < 1)
-                {
                     popularLog("ERRO", "Não há nenhum Terminal conectado ou Não está selecionado.");
-                }
                 else
                 {
                     if (lista_terminais_conectados.SelectedIndex < 0)
-                    {
                         popularLog("ERRO", "Não há Nenhum Terminal selecionado.");
-                    }
                     else
                     {
                         retorno = true;
