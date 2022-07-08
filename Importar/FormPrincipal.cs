@@ -173,13 +173,13 @@ namespace Importar
                 //-- Validações de Terminal conectado e/ou selecionado --//
                 if (lista_terminais.NumSockConec < 1)
                 {
-                    popularLog("ERRO", "Não Há Nenhum Terminal Conectado ou Não está selecionado.");
+                    popularLog("ERRO", "Não há nenhum Terminal conectado ou Não está selecionado.");
                 }
                 else
                 {
                     if (lista_terminais_conectados.SelectedIndex < 0)
                     {
-                        popularLog("ERRO", "Não Há Nenhum Terminal selecionado.");
+                        popularLog("ERRO", "Não há Nenhum Terminal selecionado.");
                     }
                     else
                     {
@@ -190,7 +190,7 @@ namespace Importar
             }
             catch (Exception erro)
             {
-                popularLog("Erro", "Erro Ao Enviar Comando!" + erro);
+                popularLog("ERRO", "Erro ao Enviar Comando!" + erro);
             }
             return retorno;
         }
